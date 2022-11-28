@@ -2296,7 +2296,7 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
         end
     end)
 
-    Main:AddToggle("Delete Effect hit", false, function(value)
+    Main:AddToggle("Delete Effect hit", true, function(value)
         getgenv().D = value
     end)
 
