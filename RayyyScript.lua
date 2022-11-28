@@ -2300,7 +2300,7 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
         getgenv().D = value
     end)
 
-    Main:AddButton("Delete Effect Damage", function()
+    Main:AddToggle("Delete Effect Damage", true, function()
         game:GetService("ReplicatedStorage").Assets.GUI.DamageCounter.Enabled = false
     end)
 
