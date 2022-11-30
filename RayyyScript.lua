@@ -2267,7 +2267,7 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
         end)
     end)
 
-    Main:AddButton("Event Confetti", function()
+    Main:AddButton("Auto Confetti", function()
         for i,v in pairs(workspace.NPCs:GetChildren()) do
         game:GetService("ReplicatedStorage").Remotes.Celebration:InvokeServer('TalkNpc',workspace.NPCs[v.Name])
         end
