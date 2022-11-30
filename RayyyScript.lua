@@ -2267,6 +2267,13 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
         end)
     end)
 
+    Main:AddButton("Event TEST", function()
+        print("WORK?")
+        for i,v in pairs(workspace.NPCs:GetChildren()) do
+        game:GetService("ReplicatedStorage").Remotes.Celebration:InvokeServer('TalkNpc',workspace.NPCs[v.Name])
+        end
+    end)
+
     Main:AddSeperator("Settings Farm")
 
     Time = Main:AddLabel("Server Time")
